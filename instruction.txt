@@ -1,0 +1,5 @@
+#for myself while checking in my mobile : 
+model : responsive
+width : 400
+height: 770
+

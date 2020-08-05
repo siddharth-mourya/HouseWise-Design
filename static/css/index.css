@@ -211,6 +211,76 @@ nav .navbar-toggler
     margin-top: 10px;
 }
 
+/* ------------------- what we do ----------------------------- */
+#services-heading h1
+{
+    margin-left: 30% !important;
+}
+/*       */
+#explore-more-btn > a
+{
+    color: #fff;
+    background-color: #16aace;
+    padding:10px 5px;
+    margin-left:45%;
+    border-radius:3px ;
+}
+#services-row 
+{
+    animation: top-down-service 1s;
+}
+#services-row a
+{
+    color:rgba(0, 0, 0, 0.8) !important;
+    font-weight: 800;
+
+}
+#services-row a:hover
+{
+    text-decoration: none;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:20px 5px;
+    margin:20px 0px;
+}
+.text{
+    margin:20px 0px;
+}
+.text span{
+    font-size: 15px;
+}
+.Services:hover
+{
+    background-color: #edf8fb;
+    animation: background-hover-services 0.7s;
+    box-shadow: 1px 1px 7px rgb(102, 100, 100);
+}
+@keyframes background-hover-services
+{
+    0%
+    {
+        background-color: #fff;
+    }
+    100%
+    {
+        background-color: #edf8fb;
+    }
+}
+@keyframes top-down-service
+{
+    0%
+    {
+        transform: translateY(-100px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
 /* ------------------- media queries ---------------------------*/
 
 @media (max-width: 1200px) 
@@ -286,6 +356,22 @@ nav .navbar-toggler
     {
         order: 1;
     }
+
+    /*   banner */
+    #cities-banner-fluid
+    {
+        margin-top: 20px;
+    }
+
+     /*   services   */
+     #services-heading h1
+     {
+         margin-left: 30% !important;
+     }
+     #explore-more-btn > a
+    {
+        margin-left:40%;
+    }
 }
 
 /* medium */
@@ -316,6 +402,17 @@ nav .navbar-toggler
         font-weight: normal;
     }
 
+    /*   services   */
+    #services-heading img
+    {
+        width: 50px;
+        height: auto;
+    }
+    #services-heading h1
+    {
+     font-size: 35px;
+     margin-left: 30% !important;
+    }
  
 }
 
@@ -325,4 +422,33 @@ nav .navbar-toggler
     {
         display: none;
     }
+
+    /*   services   */
+    #services-heading img
+    {
+        width: 40px;
+        height: auto;
+    }
+    #services-heading h1
+    {
+        font-size: 35px;
+        margin-left: 30% !important;
+    }
 }
+@media (max-width: 480px)
+{
+      /*   services   */
+      
+      #services-heading h1
+      {
+          font-size: 35px;
+          margin-left: 20% !important;
+      }
+      #explore-more-btn > a
+      {
+          margin-left:37%;
+      }
+  
+}
+
+  
