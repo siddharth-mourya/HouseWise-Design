@@ -230,7 +230,7 @@ nav .navbar-toggler
     /*     cities banner      */
     .city
     {
-        margin: 0 2%;
+        margin: 2% 2%;
         font-size: 12px;
         font-weight: bold;
         display: flex;
@@ -316,22 +316,7 @@ nav .navbar-toggler
         font-weight: normal;
     }
 
-    /*     cities banner      */
-    .city
-    {
-        margin: 0 1.5%;
-        font-size: 12px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .city img
-    {
-        max-width: 35px;
-        max-height: 35px;
-    }
+ 
 }
 
 @media (max-width: 576px)
