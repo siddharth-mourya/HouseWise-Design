@@ -200,14 +200,15 @@ nav .navbar-toggler
     flex-wrap: wrap;
     flex-direction: column;
 }
-.city   a
-{
-    margin-top: 10px;
-}
 .city img
 {
     max-width: 50px;
     max-height: 50px;
+}
+.city   a
+{
+    color: rgb(88, 88, 88);
+    margin-top: 10px;
 }
 
 /* ------------------- media queries ---------------------------*/
@@ -224,6 +225,23 @@ nav .navbar-toggler
         margin-left: 0 !important;
        
         padding-left: 0 !important; 
+    }
+
+    /*     cities banner      */
+    .city
+    {
+        margin: 0 2%;
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .city img
+    {
+        max-width: 40px;
+        max-height: 40px;
     }
 }
 
@@ -298,6 +316,22 @@ nav .navbar-toggler
         font-weight: normal;
     }
 
+    /*     cities banner      */
+    .city
+    {
+        margin: 0 1.5%;
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .city img
+    {
+        max-width: 35px;
+        max-height: 35px;
+    }
 }
 
 @media (max-width: 576px)
