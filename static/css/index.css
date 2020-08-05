@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+  }
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat','cursive';
+}
+h1 , h2 , h3 ,h4 ,h5 ,h6 , a , p 
+{
+    font-family: 'Montserrat' , 'cursive' ;
+}
+
+/*   animation   */
+@keyframes border-bottom
+{
+    0%
+    {
+        border-bottom: 2px solid #fff;
+    }
+    100%
+    {
+        border-bottom: 2px solid #16aace;
+    }
+}
+@keyframes top-down
+{
+    0%
+    {
+        transform: translateY(-50px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+@keyframes left-right
+{
+    0%
+    {
+        transform: translateX(-100px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+@keyframes right-left
+{
+    0%
+    {
+        transform: translateX(100px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+
+
+/* ------------------------ above navbar brand ----------------------------*/
+#above-nav-container
+{
+    padding: 5px 0;
+}
+.wrapper
+{
+    background-image: linear-gradient(to right, #16abcd,#35b486);
+}
+#above-nav-container img:first-child
+{
+    width: 20px;
+    height:auto;
+    margin-right: 60%;
+}
+
+#mails div i
+{
+    position: relative;
+    top: 5px;
+    margin-right: 1rem;
+}
+#above-nav-container #mails div
+{
+    position: relative;
+    top: 7px;
+    vertical-align: middle;
+}
+
+/* ----------------------------------- navbar --------------------------------------*/
+nav .container
+{
+    padding-right: 0px;
+    animation: top-down 1s;
+}
+nav .navbar-brand img
+{
+    width:200px; 
+    height: auto;
+}
+nav .navbar-toggler
+{
+    border: 1px solid rgb(143, 143, 143);
+    display: block;
+    width: 25px;
+    height: 26px;
+    padding: 0 3px;
+}
+#mynav
+{
+    font-size: 17px;
+}
+#mynav a:hover
+{
+    font-weight: bold;
+    border-bottom: 2px;
+    text-decoration: none;
+}
+#mynav ul:first-child a:hover
+{
+    animation: border-bottom 1.5s;
+}
+#mynav ul:last-child li:last-child
+{
+    background-color: #16aace;
+    border-radius: 3px;
+    padding: 0 8px;
+}
+#mynav ul:last-child li:last-child:hover
+{
+    background-color: #000;
+}
+#mynav ul li
+{
+    margin-right: 10px;
+}
+.navbar-toggler .navbar-toggler-icon {
+    width: 20px;
+    height: 21px;
+    color: rgb(75, 74, 74);
+    border-radius: 1px;
+}
+
+/* -------------------------  banner ------------------------------*/
+.banner-text
+{
+    padding: 0 20px;
+    font-weight: bold;
+    animation: left-right 1s;
+}
+.banner-text a:hover
+{
+    text-decoration: none;
+}
+.banner-img
+{
+    padding: 20px;
+    animation: right-left 1s;
+}
+.banner-text h1
+{
+    font-weight: bolder;
+    line-height: 1.5;
+}
+.banner-text p
+{
+    line-height: 2;
+}
+.banner-img img
+{
+    max-height: 100%;
+    max-width: 100%; 
+}
+.explore-services
+{
+    background-color: #16aace;
+    padding: 0 5px;
+}
+
+
+/* ------------------- media queries ---------------------------*/
+
+@media (max-width: 1200px) 
+{ 
+    /*     navigation     */
+    #mynav ul:first-child li
+    {
+        margin-right: 0 !important;
+    }
+    #mynav ul:last-child li
+    {
+        margin-left: 0 !important;
+       
+        padding-left: 0 !important; 
+    }
+}
+
+/* large */
+@media (max-width: 992px) 
+{
+    /*     navigation  */
+    #mynav
+    {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    /*     banner   */
+    .banner-text h1
+    {
+        font-size: 40px;
+        line-height: 1;
+    }
+    .banner-text p
+    {
+        line-height: 1.5;
+    }
+    .banner-img
+    {
+        text-align: center;
+    }
+    .banner-img img
+    {
+        max-height: 80%;
+        max-width: 80%; 
+    }
+    .banner-text
+    {
+        order: 2;
+    }
+    .banner-img
+    {
+        order: 1;
+    }
+}
+
+/* medium */
+@media (max-width: 768px) 
+{ 
+
+    /*  above nav bar   */
+    .above-nav-container 
+    {
+        margin-left: 0%;
+        margin-right: 0% ;
+    }
+    
+    /*     banner     */
+    .banner-img img
+    {
+        max-height: 90%;
+        max-width: 90%; 
+    }
+    .banner-text h1
+    {
+        font-size: 35px;
+        line-height: 1;
+    }
+    .banner-text p
+    {
+        line-height: 1.5;
+        font-weight: normal;
+    }
+
+}
+
+@media (max-width: 576px)
+{ 
+    .wrapper
+    {
+        display: none;
+    }
+}
