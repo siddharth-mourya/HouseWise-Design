@@ -178,6 +178,34 @@ nav .navbar-toggler
     padding: 0 5px;
 }
 
+/* -------------------- cities banner ------------------------- */
+#cities-banner-fluid
+{
+    background-color: #e5f5fa;
+}
+#cities-banner-fluid .container
+{
+    padding: 15px 0;
+}
+.city
+{
+    margin: 0 3%;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.city   a
+{
+    margin-top: 10px;
+}
+.city img
+{
+    max-width: 50px;
+    max-height: 50px;
+}
 
 /* ------------------- media queries ---------------------------*/
 
