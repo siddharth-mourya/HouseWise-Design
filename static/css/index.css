@@ -67,6 +67,10 @@ h1 , h2 , h3 ,h4 ,h5 ,h6 , a , p
 {
     padding: 5px 0;
 }
+#above-nav-container img
+{
+   cursor: pointer;
+}
 .wrapper
 {
     background-image: linear-gradient(to right, #16abcd,#35b486);
@@ -210,6 +214,12 @@ nav .navbar-toggler
     color: rgb(88, 88, 88);
     margin-top: 10px;
 }
+.city   a:hover
+{
+    text-decoration: none;
+    color: #000;
+}
+
 
 /* ------------------- what we do ----------------------------- */
 #services-heading h1
@@ -219,11 +229,18 @@ nav .navbar-toggler
 /*       */
 #explore-more-btn > a
 {
+    margin-top: 20px;
     color: #fff;
     background-color: #16aace;
     padding:10px 5px;
     margin-left:45%;
     border-radius:3px ;
+}
+#explore-more-btn > a:hover
+{
+    border: 2px solid #16aace;
+    background-color: #fff;
+    color: #000;
 }
 #services-row 
 {
@@ -252,7 +269,7 @@ nav .navbar-toggler
 .text span{
     font-size: 15px;
 }
-.Services:hover
+.Services:hover .box-part
 {
     background-color: #edf8fb;
     animation: background-hover-services 0.7s;
@@ -281,8 +298,499 @@ nav .navbar-toggler
     }
 }
 
-/* ------------------- media queries ---------------------------*/
+/* -------------------------- about us ------------------------------- */
+.about-us-text
+{
+    padding: 0 20px;
+    animation: left-right 1s;
+}
+.about-us-text a:hover
+{
+    text-decoration: none;
+}
+.about-us-img
+{
+    padding: 20px;
+    animation: right-left 1s;
+}
+.about-us-text h1
+{
+    font-weight: bolder;
+    line-height: 1.5;
+}
+.about-us-text p
+{
+    line-height: 2;
+}
+.about-us-img img
+{
+    max-height: 90%;
+    max-width: 90%; 
+}
+.explore-services
+{
+    background-color: #16aace;
+    padding: 0 5px;
+}
 
+/* --------------------------- stats banner -------------------------- */
+#stats-banner-fluid
+{
+    background-image: linear-gradient(to right, #16abcd,#35b486);
+    padding: 20px 0;
+}
+.stats
+{
+    margin: 0 3%;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.stats img
+{
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 20px;   
+}
+.stats h5
+{
+    color: #FFF;
+    font-weight: bolder;
+}
+.stats   a
+{
+    color:#fff;
+
+}
+.stats   a:hover
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* ------------------------ how it works ---------------------------- */
+.work-heading .column
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.work-heading .column:nth-child(3)
+{
+    margin-right: 0;
+}
+.work-heading h3
+{
+    font-size:40px !important;
+    font-weight: bolder !important;
+}
+/*    */
+.box-part-work{
+    border-radius:0;
+    padding:10px 10px;
+}
+.work-container .column img
+{
+    width: 60px;
+    height: 60px;
+}
+.work-container .column:nth-child(odd)
+{
+    background-color: #edf8fb;
+}
+
+/* ------------------------ benifits ------------------------------- */
+.benifit-heading
+{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+.benifit-heading img
+{
+    position: absolute;
+}
+.benifit-heading h3
+{
+    position: absolute;
+    left:44%;
+    font-size:35px;
+}
+/*    */
+.box-part-benifit{
+    border-radius:0;
+    padding:10px 10px;
+    margin:10px 10px;
+}
+.benifit-container .column img
+{
+    width: 80px;
+    height: 80px;
+}
+
+/* -----------------------------  team  --------------------------- */
+
+.team-container-fluid
+{
+    background-image: linear-gradient(to bottom, #16abcd,#35b486);
+    padding-top: 6%;
+    color: white;
+    padding-left: 0;
+}
+
+/*--------founder ----------- */
+.founder-social-div img
+{
+   width: 25px;
+   height: auto;
+   margin-top: 60%;
+   margin-bottom: 60%;
+}
+.founder-social-div img:hover
+{
+  cursor: pointer;
+}
+.founder-social-div img:last-child
+{
+    height: 30px;
+    width: auto;
+}
+.founder-social-div-breakpoint 
+{
+    display: none;
+}
+.founder-social-div-breakpoint > img:hover
+{
+    cursor: pointer;
+}
+
+.founder-img-div img
+{
+    padding-left: 10%;
+    width: 350px;
+}
+.before-breakpoint-about
+{
+    display: none;
+}
+.after-breakpoint-about
+{
+    display: block;
+}
+.founder-about-div
+{
+    padding-top: 4%;
+    padding-left: 6%  ;
+    padding-right: 6%  ;
+    color: white;
+}
+.team-container-fluid h2
+{
+    font-weight: bolder;
+}
+.founder-bird-img-div
+{
+    position: relative;
+}
+.founder-bird-img-div img
+{
+    position: absolute;
+    top:20px;
+    width: 100px;
+    height: auto;
+    right: 0;
+}
+/*-------- Rest Team heading----------- */
+
+.rest-team-heading
+{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+.rest-team-heading img
+{
+    position: absolute;
+}
+.rest-team-heading h3
+{
+    position: absolute;
+    left:40%;
+    font-size:35px;
+}
+/*--------------  rest team  row ------------*/
+
+.rest-team-row
+{
+    padding: 20px 50px;
+}
+.rest-team-row .column
+{
+    padding: 30px;
+    position: relative;
+}
+.rest-team-row .column img
+{
+    width: 100%;
+    height: auto;
+}
+.rest-team-row .team-member-info
+{
+
+    position: absolute;
+    top: 10%;
+    left: 0;
+    color: #fff;
+    opacity: 0;
+    padding: inherit;
+    margin:10px;
+}
+.rest-team-row .column:hover  .team-member-info
+{
+    opacity: 1;
+}
+.rest-team-row .column:hover  img
+{
+    opacity:0.2;
+}
+.rest-team-row .column:hover  .layer
+{
+    background-color: rgba(0,0,0,0.5);
+}
+  
+
+/*-------------------------- rating  ----------------------------------*/
+.rating-container
+{
+    background-color: #edf8fb;
+}
+.rating-container .card
+{
+    padding: 0 60px;
+    background-color: #edf8fb;
+}
+.stars-div img
+{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
+.testimonial-div img
+{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+.testimonial-div img:nth-child(2)
+{
+    width: 70px;
+    height: 70px;
+}
+
+
+
+/* --------------------------- news ------------------------------- */
+.news-heading
+{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+.news-heading img
+{
+    position: absolute;
+}
+.news-heading h3
+{
+    position: absolute;
+    left:42%;
+    font-size:35px;
+}
+
+/*    */
+.news-company-container
+{
+    margin-bottom: 30px;
+}
+.news-company-container .row img
+{
+    margin-top: 50px;
+    width: 10%;
+    margin-right: 5%;
+}
+
+/* ------------------------ blog post --------------------------- */
+.blog-post-container
+{
+    margin-top: 50px;
+    padding: 0 5%;
+}
+.blog-post-container .card
+{
+    padding: 20px;
+}
+.blog-post-container a:hover
+{
+    text-decoration: none;
+}
+
+/*   */
+.view-all
+{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+.view-all img
+{
+    position: absolute;
+}
+.view-all a
+{
+    position: absolute;
+    left:45%;
+    color: #fff;
+}
+
+/* -------------------------- location btns  -------------------------- */
+.location-container .row
+{
+
+}
+.location-container li
+{
+    margin: 0 10px;
+    text-align: center;
+    
+}
+.location-container li a
+{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 20px;
+}
+.location-container .active  
+{
+    color: white;
+    background-image: linear-gradient(to right, #16abcd,#35b486) ;
+}
+
+/* --------------------------------- contact ------------------------------- */
+.contact-heading
+{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+.contact-heading img
+{
+    position: absolute;
+}
+.contact-heading img:last-child
+{
+    right: 0;
+}
+.contact-heading h3
+{
+    position: absolute;
+    left:42%;
+    font-size:35px;
+}
+
+/* ------------------------- contact form --------------------------- */
+.contact-form-container-fluid
+{
+    position: relative;
+}
+.contact-form-container
+{
+    margin-top: 20px;
+}
+.contact-form-container input[type="submit"]
+{
+    background-color: #16aace;
+}
+/*    */
+.contact-form-container .row:last-child img
+{
+    height: 20px;
+}
+.contact-form-container .row:last-child .numbers
+{
+    padding-left: 40px !important;
+}
+#magnifying_glass
+{
+    position: absolute;
+    top:10%;
+    width: 100px;
+    right: 0;
+}
+#building
+{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    right: 2%;
+}
+/* ------------------------ footer -------------------------- ---------*/
+.footer-container
+{
+    padding:30px 30px;
+    color: rgb(236, 235, 235);
+
+}
+.footer-container .col-lg-3
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.footer-container .col-lg-2
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/*  left side   */
+.footer-container .left-side .logo
+{
+    width: 100%;
+}
+.left-side{
+    border-right: 1px solid rgb(153, 153, 153);
+}
+.footer-container .left-side .social-logo img
+{
+    height: 20px;
+}
+
+/*  center   */
+.center-left-side ul li , .center-right-side ul li , .right-side ul li
+{
+    margin: 20px 0;
+}
+.center-left-side ul li a , .center-right-side ul li a , .right-side ul li a
+{
+    text-decoration: none;
+}
+.footer-container a:hover
+{
+    color: #16aace !important;
+}
+
+
+/* ------------------------ media queries --------------------------- */
+
+/* large */
 @media (max-width: 1200px) 
 { 
     /*     navigation     */
@@ -314,8 +822,25 @@ nav .navbar-toggler
         max-height: 40px;
     }
 }
+/*random don't know why */
+@media (max-width: 1091px) 
+{
+    /* founder team */
+    .founder-social-div img
+    {
+    width: 25px;
+    height: auto;
+    }
+    .founder-about-div
+    {
+        padding-top: 2%;
+        padding-left: 3%  ;
+        padding-right: 3%  ;
+    }
+   
+}
 
-/* large */
+/* medium */
 @media (max-width: 992px) 
 {
     /*     navigation  */
@@ -372,9 +897,73 @@ nav .navbar-toggler
     {
         margin-left:40%;
     }
+    /*  about us   */
+    #about-us-birds
+    {
+        display: none;
+    }
+      
+    /* founder team */
+    .founder-social-div img
+    {
+    width: 25px;
+    height: auto;
+    }
+    .founder-about-div
+    {
+        padding-top: 1%;
+        padding-left: 2%  ;
+        padding-right: 2%  ;
+    }
+    .founder-bird-img-div img
+    {
+        top:-35px;
+    }
+    .founder-img-div img
+    {
+        padding-left: 5%;
+        padding-top: 5%;
+        width: 300px;
+    }
+
+    /*  rest team heading  */
+    .rest-team-heading h3
+    {
+        left: 35%;
+    }
+
+     /*  rest team  row  */
+    .rest-team-row
+    {
+        padding: 20px 30px;
+    }
+    .rest-team-row .column
+    {
+        padding:5px 15px;
+    }
+
+    /*   news   */
+    .news-heading h3
+    {
+        left:40%;
+        font-size:35px;
+    }
+
+    /*   rating   */
+    .rating-container .card
+    {
+        padding: 0 30px;
+    }
+
+    /*  contact   */
+    .contact-form-container .row .col-lg-6:last-child 
+    {
+        margin-top: 40px  !important;
+    }
+
 }
 
-/* medium */
+
 @media (max-width: 768px) 
 { 
 
@@ -413,7 +1002,109 @@ nav .navbar-toggler
      font-size: 35px;
      margin-left: 30% !important;
     }
- 
+
+    /*  stats  */
+    .stats
+    {
+        margin-top: 20px;
+    }
+
+    /*  benifits   */
+    .benifit-heading img
+    {
+       width: 130px;
+       height: 60px;
+    }
+    
+    /* founder team */
+    .founder-row , .rest-team-row
+    {
+        width: 100%;
+    }
+    .team-container-fluid
+    {
+        padding: 0;
+    }
+    .founder-social-div img
+    {
+        display: none;
+    }
+    .founder-img-div > img
+    {
+        padding-left: 10px;
+        padding-top: 3%;
+        width: 250px;
+        height: auto;
+    }
+    .founder-social-div-breakpoint 
+    {
+        display: block;
+    }
+    .founder-social-div-breakpoint > img
+    {
+        padding-left: 5px;
+        padding-top: 5px;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .before-breakpoint-about
+    {
+        display: block;
+    }
+    .after-breakpoint-about
+    {
+        display: none;
+    }
+     /*  rest team  row  */
+     .rest-team-row .column
+     {
+         padding:10px 15px;
+     }
+    
+     /*   news   */
+    .news-heading h3
+    {
+        left:35%;
+        font-size:35px;
+    }
+
+    /*   rating   */
+    .rating-container .card
+    {
+        padding: 0 30px;
+    }
+
+    /*  news   */
+    .news-company-container .row img
+    {
+        width: 15%;
+    }
+
+    /*  contact   */
+    .contact-heading h3
+    {
+        left:40%;
+    }
+
+    /* footer */
+    .left-side
+    {
+        border-right: 0;
+        border-bottom: 1px solid  rgb(153, 153, 153);;
+    }
+    .center-left-side
+    {
+        border-right: 0;
+        border-bottom: 1px solid  rgb(153, 153, 153);;
+    }
+    .center-right-side
+    {
+        border-right: 0;
+        border-bottom: 1px solid  rgb(153, 153, 153);;
+    }
+    
+
 }
 
 @media (max-width: 576px)
@@ -434,6 +1125,67 @@ nav .navbar-toggler
         font-size: 35px;
         margin-left: 30% !important;
     }
+
+    /*   works    */
+    .work-heading .column img
+    {
+        width: 100px !important;
+        height: 60px !important;
+    }
+     /*  benifits   */
+     .benifit-heading img
+     {
+        width: 100px;
+        height: 40px;
+     }
+     .benifit-heading h3
+     {
+         position: absolute;
+         left:40%;
+     }
+
+     /*   team    */
+     .founder-img-div img
+     {
+         width: 200px;
+         height: auto;
+     }
+    
+     .team-container-fluid h2
+    {
+        font-size: 30px;
+    }
+    .team-container-fluid h4
+    {
+        font-size: 25px;
+    }
+    .founder-social-div-breakpoint > img
+    {
+        padding-left: 5px;
+        padding-top: 5px;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /*  rest team heading  */
+    .rest-team-heading h3
+    {
+        left: 27%;
+    }
+    
+    /*   news   */
+    .news-heading h3
+    {
+        left:30%;
+        font-size:35px;
+    }
+
+    /*  contact   */
+    .contact-heading h3
+    {
+        left:35%;
+    }
 }
 @media (max-width: 480px)
 {
@@ -442,11 +1194,51 @@ nav .navbar-toggler
       #services-heading h1
       {
           font-size: 35px;
-          margin-left: 20% !important;
+          margin-left: 15% !important;
       }
       #explore-more-btn > a
       {
           margin-left:37%;
+      }
+      
+     /*   team    */
+     .founder-img-div img
+     {
+         width: 170px;
+         height: auto;
+     }  
+     .team-container-fluid h2
+     {
+         font-size: 25px;
+     }
+     .team-container-fluid h4
+     {
+         font-size: 20px;
+     }
+     .founder-social-div-breakpoint > img
+    {
+        padding-left: 5px;
+        padding-top: 5px;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    /*   news   */
+    .news-heading h3
+    {
+        left:25%;
+        font-size:35px;
+    }
+    /*   rating   */
+    .rating-container .card
+    {
+        padding: 0 30px;
+    }
+      /*  contact   */
+      .contact-heading h3
+      {
+          left:30%;
+          font-size: 30px;
       }
   
 }
